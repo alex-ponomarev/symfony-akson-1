@@ -12,7 +12,7 @@ class Authorization
         $client = new CurlHttpClient();
         $response = $client->request(
             'GET',
-            $serviceURL.'/api/category/login_check',[
+            $serviceURL.'/api/product/login_check',[
                 'json' =>['username'=>'akson','password'=>'akson'],
                 'headers' => [
                     'Content-Type' => 'application/json',]
